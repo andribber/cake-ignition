@@ -1,0 +1,31 @@
+2024-03-13 17:36:42 error: [Cake\Http\Exception\MissingControllerException] Controller class User could not be found. in /var/www/app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 338
+Exception Attributes: array (
+  'controller' => 'User',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+  'class' => 'User',
+)
+Stack Trace:
+- /var/www/app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:75
+- /var/www/app/vendor/cakephp/cakephp/src/Http/BaseApplication.php:320
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:86
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:176
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:189
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:149
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:82
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Runner.php:67
+- /var/www/app/vendor/cakephp/cakephp/src/Http/Server.php:99
+- /var/www/app/webroot/index.php:40
+- [main]:
+
+Request URL: /user
+Client IP: 172.25.0.1
